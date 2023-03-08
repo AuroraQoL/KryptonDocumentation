@@ -32,5 +32,19 @@ VARIABLES -> upper snake case ( MY_VARIABLE )
 ```
 
 ## 3. Basics - Executors
+To define an **executor** please use the standard DoubleExec syntax with exception on the chest trigger.
+
+Here all the triggers:
+
+
+**CHAT MESSAGE TRIGGER**
+```
+ONCHAT:
+(Text)
+```
+The following triggers when message recieved by user contains specified Text.
+> **💡 TIP:** This can be used for executing script from script. More in this in the "Practical uses and examples" section
+
+
 
 [...] UNDER CONSTRUCTION
