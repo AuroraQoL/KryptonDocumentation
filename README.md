@@ -70,5 +70,21 @@ ONKEY:
 The following triggers when the following key is clicked.
 To view keycodes [click here](https://minecraft.fandom.com/wiki/Key_codes#Before_1.13)
 
+## 3. Basics - Arithmetics & Variables
+First of all we need to see diffrent types of expressions. In krypton we have three types:
+
+- Math expressions
+
+Standard math. Nothing special.
+
+- Text expressions
+
+Normal text with variable support. Can't use any arithmetic operations.
+
+- Universal expression
+
+Expression where first character defines type. "$" means it is being parsed as text, "*" is no parsing, and no symbol means traditional math parser.
+
+
 
 
