@@ -83,8 +83,21 @@ Normal text with variable support. Can't use any arithmetic operations.
 
 - Universal expression
 
-Expression where first character defines type. "$" means it is being parsed as text, "*" is no parsing, and no symbol means traditional math parser.
+Expression where first character defines type. "$" means it is being parsed as text expression, "\*" is no parsing, and no symbol means traditional math parser.
 
 
+We've also included special constans that can be used in math and text expressions. 
 
+```
+PLAYER_X
+PLAYER_Y
+PLAYER_Z
+PLAYER_MOTION_X
+PLAYER_MOTION_Y
+PLAYER_MOTION_Z
+PLAYER_HOTBAR_SLOT (incremeneted starting from 0)
+PLAYER_EYEHEIGHT
+PLAYER_ONGROUND (0 or 1)
+PLAYER_SNEAKING (0 or 1)
+```
 
