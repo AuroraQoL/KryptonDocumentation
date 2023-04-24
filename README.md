@@ -46,5 +46,29 @@ The following triggers when message recieved by user contains specified Text.
 > **💡 TIP:** This can be used for executing script from script. More in this in the "Practical uses and examples" section
 
 
+**CHEST OPEN TRIGGER**
+```
+ONCHEST
+```
+Triggers on chest open. Note that this trigger is not like a regular expression!
 
-[...] UNDER CONSTRUCTION
+
+**CHAT MESSAGE TRIGGER**
+```
+ONCHAT:
+(Text)
+```
+The following triggers when message recieved by user contains specified Text.
+> **💡 TIP:** This can be used for executing script from script. More in this in the "Practical uses and examples" section
+
+
+**KEYBOARD TRIGGER**
+```
+ONKEY:
+(Keycode)
+```
+The following triggers when the following key is clicked.
+To view keycodes [click here](https://minecraft.fandom.com/wiki/Key_codes#Before_1.13)
+
+
+
