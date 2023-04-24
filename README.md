@@ -101,3 +101,52 @@ PLAYER_ONGROUND (0 or 1)
 PLAYER_SNEAKING (0 or 1)
 ```
 
+__***FOR VARIALES, I WILL POST A FRAGMENT OF OLD DOCUMENTATION***__
+
+**3. Variables**
+To set variable use one of the two commands
+```ts
+SETVAL:
+[Variable Name]:[Value as raw expression]
+RSETVAL:
+[Variable Name]:[Value as universal expression]
+```
+Here are usage examples:
+```ts
+SETVAL:
+test:PLAYER_X 
+```
+In this example variable test will be "PLAYER_X"
+```ts
+RSETVAL:
+test:PLAYER_X
+```
+In this example variable test will be equals to whatever the player x position is. For example if player x is 5, the variable will be 5
+
+To reference variables in Expressions use following syntax:
+```ts
+VAR([variable name])
+```
+For example following code:
+```ts
+SETVAL:
+test:-1
+RSETVAL:
+test:VAR(test)+1
+```
+Will set variable "test" to -1 then make it 0.
+Note that operations like that:
+```ts
+SETVAL:
+test:Hello
+RSETVAL:
+test:VAR(test)+1
+```
+Won't be executed and will terminate the program as the expression (Hello+1) can't be parsed properly. It would work properly if set like that:
+```ts
+SETVAL:
+test:Hello
+RSETVAL:
+test:$VAR(test)1
+```
+With above example variable test will become "Hello1'
