@@ -207,3 +207,95 @@ SAY:
 ```
 
 **6. Control flow**
+
+```ts
+[LOOPTYPE]:
+[MATH EXPRESSION - PARAMETER] OR [CONDITION EXPRESSION]
+  ACTION
+  ACTION
+```
+
+(action prefixed by tab)
+
+Repeat loop
+
+```ts
+LOOP:
+[MATH EXPRESSION]
+```
+
+Conditional expressions (old documentation insert)
+
+```ts
+[MATHEXP]:HIGHER_THAN:[MATHEXP] 
+1:HIGHER_THAN:0 (true)
+[MATHEXP]:LOWER_THAN:[MATHEXP]
+0:LOWER_THAN:1 (true)
+[MATHEXP]:EQUALS:[MATHEXP]
+0:EQUALS:0 (true)
+[MATHEXP]:NOT_EQUALS:[MATHEXP]
+0:NOT_EQUALS:0 (false)
+[MATHEXP]:LP_EQUALS:[MATHEXP]
+0.1:LP_EQUALS:0.2 (true)
+1.3:LP_EQUALS:2.2 (false)
+[MATHEXP]:NOT_LP_EQUALS:[MATHEXP]
+0.1:NOT_LP_EQUALS:2 (true)
+[STREXP]:TEXT_EQUALS:[STREXP]
+shello:TEXT_EQUALS:shello (true)
+[STREXP]:NOT_TEXT_EQUALS:[STREXP]
+shello:NOT_TEXT_EQUALS:maddox (true)
+[block id as MATHEXP]:IS_BLOCK_AT:[x as MATHEXP]:[y as MATHEXP]:[z as MATHEXP]
+```
+
+While loop
+
+```
+WHILE:
+[CONDITION EXPRESSION]
+```
+
+If loop
+
+```
+IF:
+[CONDITION EXPRESSION]
+```
+
+3D Block Loop 
+
+```
+BLOCKINRANGE:
+[MATH EXPRESSION - RANGE]
+```
+
+To access each coordinate use ITR(x), ITR(y), ITR(z)
+
+# KryptonHUD Guide
+
+Since all scripts share same memory, it can be accessed from diff ones.
+
+All kryptonhud modules should be put in diffrent files and they should contain only kryptonhud
+
+example:
+
+```ts
+INTERFACE:
+[TYPE]
+[PARAMETERS]
+```
+
+**TEXT DRAWING**
+
+```ts
+INTERFACE:
+TEXT
+(SHADOW/NORMAL):[TEXT EXPRESSION - TEXT]:[MATH EXRPESSION - X OFFSET]:[MATH EXRPESSION - Y OFFSET]:[MATH EXRPESSION - RGB COLOR CODE]
+```
+
+**RECTANGLE DRAWING**
+
+```ts
+INTERFACE:
+TEXT
+[MATH EXRPESSION - X OFFSET]:[MATH EXRPESSION - Y OFFSET]:[MATH EXRPESSION - X SIZE]:[MATH EXRPESSION - Y SIZE]:[MATH EXRPESSION - RGB COLOR CODE]
+```
