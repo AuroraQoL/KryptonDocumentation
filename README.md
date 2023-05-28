@@ -150,3 +150,7 @@ RSETVAL:
 test:$VAR(test)1
 ```
 With above example variable test will become "Hello1'
+
+**4. Commands**
+
+Here are the commands:
