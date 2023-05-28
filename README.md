@@ -154,3 +154,56 @@ With above example variable test will become "Hello1'
 **4. Commands**
 
 Here are the commands:
+
+Clip (no bypass)
+```ts
+CLIP:
+[MATH EXPRESSION - BLOCKS]:(UP/DOWN)
+``` 
+Click
+```ts
+CLICK:
+(LEFT/RIGHT):[MATH EXPRESSION - DELAY]
+``` 
+Standard Output
+```ts
+PRINT:
+[TEXT EXPRESSION - TEXT]
+```
+Look at block
+```ts
+LOOKAT:
+[MATH EXPRESSION - X]:[MATH EXPRESSION - Y]:[MATH EXPRESSION - Z]
+```
+Look at block smooth
+```ts
+LOOKAT:
+[MATH EXPRESSION - X]:[MATH EXPRESSION - Y]:[MATH EXPRESSION - Z]:[MATH EXPRESSION - MS]
+```
+Wait
+```ts
+WAIT:
+[MATH EXPRESSION - TIME IN MS]
+```
+Break block
+```ts
+BREAKBLOCK:
+[MATH EXPRESSION - X]:[MATH EXPRESSION - Y]:[MATH EXPRESSION - Z]
+```
+Swap hotbar
+```ts
+SWAPHOTBAR:
+[MATH EXPRESSION - SLOT IN RANE 0~8]
+```
+Sneak
+```ts
+SNEAK:
+[TEXT EXPRESSION - IGNORED]:(START/STOP)
+```
+Say
+```ts
+SAY:
+[TEXT EXPRESSION - WHAT TO SAY]
+```
+
+**6. Control flow**
