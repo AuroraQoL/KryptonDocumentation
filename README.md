@@ -205,6 +205,11 @@ Say
 SAY:
 [TEXT EXPRESSION - WHAT TO SAY]
 ```
+Click in GUIs
+```ts
+GUICLICK:
+[MATH EXPRESSION - SLOT NUMBER - STARTING FROM 0]
+```
 
 **6. Control flow**
 
