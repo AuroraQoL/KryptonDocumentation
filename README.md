@@ -208,7 +208,17 @@ SAY:
 Click in GUIs
 ```ts
 GUICLICK:
-[MATH EXPRESSION - SLOT NUMBER - STARTING FROM 0]
+[MATH EXPRESSION - SLOT NUMBER - STARTING FROM 0]:[MATH EXPRESSION - MOUSE BUTTON]:[MATH EXPRESSION - MODE]
+```
+Examples:
+```ts
+Mouse Button 0 and Mode 0 is left click
+Mouse Button 1 and Mode 0 is Right Click
+Mouse Button 2 and Mode 0 is Middle Click (Shouldn't be used on Hypixel)
+Mouse Button 2 and Mode 3 is Middle Click (Works on Hypixel)
+Mouse Button 0/1 and Mode 4 is Dropping the Item
+Mouse Button 0/1 and Mode 1 is quick moving the item
+Mouse Button 0/1 and Mode 2 is swapping the item
 ```
 
 **6. Control flow**
